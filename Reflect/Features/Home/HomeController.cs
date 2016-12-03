@@ -8,9 +8,8 @@ namespace Reflect.Features.Home
 { 
     public class HomeController : Controller
     {
-
         public ActionResult Index() {
-            return null;
+            return View();
         }
     }
 }
