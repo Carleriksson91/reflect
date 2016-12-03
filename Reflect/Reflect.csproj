@@ -112,10 +112,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="gulpfile.js" />
     <Content Include="packages.config" />
     <Content Include="Features\Home\index.cshtml" />
     <Content Include="Main\Views\web.config" />
     <Content Include="Features\Web.config" />
+    <None Include=".bin\bower.cmd" />
+    <None Include=".bin\git.cmd" />
+    <None Include=".bin\node.cmd" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -138,6 +142,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Features\Home\Static\" />
     <Folder Include="Main\Static\" />
   </ItemGroup>
   <PropertyGroup>
