@@ -1,6 +1,7 @@
 ﻿var gulp = require("gulp"),
     sass = require("gulp-sass"),
-    concat = require("gulp-concat");
+    concat = require("gulp-concat"),
+    inject = require("gulp-inject");
 
 var paths = {
     webroot: "./Features/Home/Static/"
