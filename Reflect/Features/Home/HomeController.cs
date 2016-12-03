@@ -1,4 +1,5 @@
 ﻿using Reflect.Context;
+using Reflect.Context.Entites;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,8 @@ namespace Reflect.Features.Home
     public class HomeController : Controller
     {
         public ActionResult Index() {
-            return View();
+         var model = new HomeViewModel(GetQuestions());
+            return View(model);
         }
       [HttpPost]
       public ActionResult Ask(string title, string content) {
@@ -29,5 +31,14 @@ namespace Reflect.Features.Home
 
       }
 
-    }
+      [HttpGet]
+      public IEnumerable<Question> GetQuestions() {
+         var questions = new List<Question>();
+         using(var context = new AzureContext()) {
+            questions.AddRange(context.Questions.OrderByDescending(x => x.Date));
+         }
+
+         return questions;
+      }
+      }
 }

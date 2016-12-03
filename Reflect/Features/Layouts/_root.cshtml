@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+   <link href="~/Features/Home/Static/foundation.css" rel="stylesheet" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+   <script src="~/bower_components/foundation-sites/js/foundation.core.js"></script>
+
+
+   <link href="~/bower_components/foundation-sites/dist/foundation.css" rel="stylesheet" />
+
+
+   <meta name="viewport" content="width=device-width" />
+   <title>@ViewBag.Title</title>
+
+</head>
+<body>
+   <div style="height:2000px">
+      @*<div data-sticky-container>
+         <div class="title-bar sticky is-anchored is-at-top" style="width:100%; position:fixed;">
+            <div class="title-bar-left">
+               <div class="button-group">
+                  <a class="button">One</a>
+                  <a class="button">Two</a>
+                  <a class="button">Three</a>
+               </div>
+            </div>
+
+         </div>
+
+      </div>*@
+      @RenderBody()
+   </div>
+</body>
+</html>

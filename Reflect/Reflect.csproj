@@ -409,6 +409,7 @@
     <Content Include="bower_components\what-input\README.md" />
     <Content Include="Features\Home\Static\home.scss" />
     <Content Include="package.json" />
+    <Content Include="Features\Layouts\_root.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

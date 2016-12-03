@@ -1,7 +1,25 @@
-﻿<div class="row">
-    <form action="/Home/Ask" method="post">
-       <input type="text" name="title" />
-       <textarea name="content"></textarea>
-       <input type="submit" value="Ask"/>
-    </form>
+﻿@{ Layout = "~/Features/Layouts/_root.cshtml";}
+@model HomeViewModel
+<div class="row">
+   <div class="medium-6">
+      <form action="/Home/Ask" method="post">
+         <p>Title</p>
+         <input type="text" name="title" />
+         <p>Fråga</p>
+         <textarea name="content"></textarea>
+         <input type="submit" value="Ask" />
+      </form>
+   </div>
+</div>
+
+<div class="row">
+   <div class="medium-8 columns">
+      <h2>Frågor</h2>
+      <ul>
+      @foreach(var question in Model.Questions) {
+        <li>@question.Content</li>
+      }
+      </ul>
+   </div>
+
 </div>
