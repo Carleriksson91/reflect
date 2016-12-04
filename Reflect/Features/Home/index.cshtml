@@ -1,25 +1,41 @@
 ﻿@{ Layout = "~/Features/Layouts/beer.cshtml";}
 @model HomeViewModel
-@*<div class="row">
-   <div class="medium-6">
-      <form action="/Home/Ask" method="post">
-         <p>Title</p>
-         <input type="text" name="title" />
-         <p>Fråga</p>
-         <textarea name="content"></textarea>
-         <input type="submit" value="Ask" />
-      </form>
-   </div>
-</div>
 
-<div class="row">
-   <div class="medium-8 columns">
-      <h2>Frågor</h2>
-      <ul>
-      @foreach(var question in Model.Questions) {
-        <li>@question.Content</li>
-      }
-      </ul>
-   </div>
-
-</div>*@
+<form action="/Home/Ask" method="post">
+    <div class="form-group">
+        <label for="title">Titel</label>
+        <input type="text" class="form-control" name="title" id="title" />
+    </div>
+    <div class="form-group">
+        <label for="question">Fråga</label>
+        <textarea name="content" class="form-control" id="question"></textarea>
+    </div>
+    <button type="submit" class="btn btn-default btn-xl">Fråga</button>
+</form>
+<div class="row text-center">
+       <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+             <i class="fa fa-circle fa-stack-2x text-primary"></i>
+             <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">E-Commerce</h4>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+       </div>
+       <div class="col-md-4">
+           <h2>Frågor</h2>
+           <ul>
+               @foreach (var question in Model.Questions)
+               {
+                   <li>@question.Content</li>
+               }
+           </ul>
+       </div>
+       <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+             <i class="fa fa-circle fa-stack-2x text-primary"></i>
+             <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">Web Security</h4>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+       </div>
+    </div>

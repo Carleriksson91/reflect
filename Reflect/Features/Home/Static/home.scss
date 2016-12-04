@@ -1,4 +1,35 @@
-﻿.test{
-font-size:46px;
-background-color:red;
-}            
+﻿.test {
+    font-size: 46px;
+    background-color: red;
+}
+
+body {
+    color: #fff !important;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0,0,0,.5) !important;
+    height: 100%;
+    background-color: #222 !important;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+
+.arrow {
+    width: 0; 
+    height: 0;
+    border-style: solid;
+    background: transparent;
+}
+
+.arrow-right {
+     border-width: 60px 0 60px 70px;
+    border-color: transparent transparent transparent #f6bf01;
+}
+
+.arrow-left {
+
+    border-width: 60px 70px 60px 0;
+    border-color: transparent #f6bf01 transparent transparent;
+}

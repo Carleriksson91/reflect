@@ -14,7 +14,7 @@
 
 
 
-
+    <link href="~/Features/Home/Static/foundation.css" rel="stylesheet" />
  
 
    <!-- Custom Fonts -->
@@ -34,7 +34,6 @@
 </head>
 
 <body id="page-top" class="index">
-   @RenderBody()
    <!-- Navigation -->
    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -46,7 +45,7 @@
                <span class="icon-bar"></span>
                <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top">Ölsorter.se</a>
+            <a class="navbar-brand page-scroll" href="#page-top">Reflect?</a>
          </div>
 
          <!-- Collect the nav links, forms, and other content for toggling -->
@@ -56,24 +55,28 @@
                   <a href="#page-top"></a>
                </li>
                <li>
-                  <a class="page-scroll" href="#services">Om</a>
+                  <a class="page-scroll" href="#services">Fråga</a>
                </li>
                <li>
-                  <a class="page-scroll" href="#portfolio">Stout</a>
+                  <a class="page-scroll" href="#portfolio">Frågor</a>
                </li>
                <li>
-                  <a class="page-scroll" href="#about">Ale</a>
+                  <a class="page-scroll" href="#about">...</a>
                </li>
-               <li>
-                  <a class="page-scroll" href="#team">IPA</a>
-               </li>
+                <li>
+                    <a class="page-scroll" href="#team">.....</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#test">Test</a>
+                </li>
                <li>
                   <a class="page-scroll" href="#contact">Contact</a>
                </li>
+                <li>
+                    <a class="page-scroll" href="#radiobuttons">Radiobuttons</a>
 
-               <li>
-                  <a class="page-scroll" href="#test">Test</a>
-               </li>
+                </li>
+
             </ul>
          </div>
          <!-- /.navbar-collapse -->
@@ -82,26 +85,35 @@
    </nav>
 
    <!-- Header -->
-   <header>
-      <div class="container">
-         <div class="intro-text">
-            <div class="intro-lead-in">Beeeeeeeeeeer!!</div>
-            <div class="intro-heading">Trevligt att träffas!</div>
-            <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
-         </div>
-      </div>
-   </header>
+<header>
+
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-lead-in">Senaste frågan</div>
+            <div class="intro-heading">
+                Trevligt att träffas!
+            </div>
+            <a href="#services" class="page-scroll btn btn-xl">Fråga</a>
+        </div>
+    </div>
+</header>
 
    <!-- Services Section -->
    <section id="services">
       <div class="container">
-         <div class="row">
-            <div class="col-lg-12 text-center">
-               <h2 class="section-heading">Om</h2>
-               <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-            </div>
-         </div>
-         <div class="row text-center">
+          <div class="row">
+              <div class="col-lg-12 text-center">
+                  <h2 class="section-heading">Fråga</h2>
+                  <h3 class="section-subheading text-muted">Ställ en fråga.</h3>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-lg-12 text-center">
+                  @RenderBody()
+              </div>
+          </div>
+
+         @*<div class="row text-center">
             <div class="col-md-4">
                <span class="fa-stack fa-4x">
                   <i class="fa fa-circle fa-stack-2x text-primary"></i>
@@ -126,7 +138,7 @@
                <h4 class="service-heading">Web Security</h4>
                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
             </div>
-         </div>
+         </div>*@
       </div>
    </section>
 
@@ -385,9 +397,14 @@
    </section>
 
 
-   <section id="test">
-      <h1>Test!</h1>
-   </section>
+<section id="test">
+    <h1>Test!</h1>
+    @Html.Partial("~/Features/fancyhovertest.cshtml")
+</section>
+    <section id="radiobuttons">
+        <h1>Radios!</h1>
+        @Html.Partial("~/Features/radiobuttons.cshtml")
+    </section>
    <!-- Clients Aside -->
    <aside class="clients">
       <div class="container">

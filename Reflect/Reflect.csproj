@@ -311,11 +311,14 @@
     <Content Include="img\about\2.jpg" />
     <Content Include="img\about\3.jpg" />
     <Content Include="img\about\4.jpg" />
+    <Content Include="img\black.jpg" />
     <Content Include="img\carl.jpg" />
     <Content Include="img\contact.jpg" />
     <Content Include="img\contact2.jpg" />
     <Content Include="img\header-bg.jpg" />
     <Content Include="Features\img\header-bg2.jpg" />
+    <Content Include="img\header-black.jpg" />
+    <Content Include="img\header-wood.jpg" />
     <Content Include="img\logos\aetuts.jpg" />
     <Content Include="img\logos\creative-market.jpg" />
     <Content Include="img\logos\designmodo.jpg" />
@@ -343,6 +346,8 @@
     <Content Include="Features\Layouts\jquery-1.11.0.js" />
     <Content Include="Global.asax" />
     <Content Include="gulpfile.js" />
+    <Content Include="Main\Static\radiobuttons.css" />
+    <Content Include="Main\Static\fancyhover.css" />
     <Content Include="packages.config" />
     <Content Include="Features\Home\index.cshtml" />
     <Content Include="Main\Views\web.config" />
@@ -454,6 +459,8 @@
     <Content Include="package.json" />
     <Content Include="Features\Layouts\_root.cshtml" />
     <Content Include="Features\Layouts\beer.cshtml" />
+    <Content Include="Features\fancyhovertest.cshtml" />
+    <Content Include="Features\radiobuttons.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -480,9 +487,7 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Main\Static\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
