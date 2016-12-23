@@ -307,6 +307,7 @@
     <Content Include="Features\Layouts\cbpAnimatedHeader.min.js" />
     <Content Include="Features\Layouts\classie.js" />
     <Content Include="Features\Layouts\contact_me.js" />
+    <Content Include="img\404.jpg" />
     <Content Include="img\about\1.jpg" />
     <Content Include="img\about\2.jpg" />
     <Content Include="img\about\3.jpg" />
@@ -461,6 +462,7 @@
     <Content Include="Features\Layouts\beer.cshtml" />
     <Content Include="Features\fancyhovertest.cshtml" />
     <Content Include="Features\radiobuttons.cshtml" />
+    <Content Include="404.html" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
