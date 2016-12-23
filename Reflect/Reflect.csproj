@@ -1003,14 +1003,14 @@
     <Content Include="bower_components\what-input\what-input.min.js" />
     <Content Include="Features\Home\Static\foundation.css" />
     <Content Include="Features\Layouts\agency.css" />
-    <Content Include="Features\Layouts\agency.js" />
+    <Content Include="Main\Static\js\agency.js" />
     <Content Include="Features\Layouts\bootstrap.css" />
-    <Content Include="Features\Layouts\bootstrap.js" />
-    <Content Include="Features\Layouts\bootstrap.min.js" />
-    <Content Include="Features\Layouts\cbpAnimatedHeader.js" />
-    <Content Include="Features\Layouts\cbpAnimatedHeader.min.js" />
-    <Content Include="Features\Layouts\classie.js" />
-    <Content Include="Features\Layouts\contact_me.js" />
+    <Content Include="Main\Static\js\bootstrap.js" />
+    <Content Include="Main\Static\js\bootstrap.min.js" />
+    <Content Include="Main\Static\js\cbpAnimatedHeader.js" />
+    <Content Include="Main\Static\js\cbpAnimatedHeader.min.js" />
+    <Content Include="Main\Static\js\classie.js" />
+    <Content Include="Main\Static\js\contact_me.js" />
     <Content Include="img\404.jpg" />
     <Content Include="img\about\1.jpg" />
     <Content Include="img\about\2.jpg" />
@@ -1047,8 +1047,8 @@
     <Content Include="img\team\1.jpg" />
     <Content Include="img\team\2.jpg" />
     <Content Include="img\team\3.jpg" />
-    <Content Include="Features\Layouts\jqBootstrapValidation.js" />
-    <Content Include="Features\Layouts\jquery-1.11.0.js" />
+    <Content Include="Main\Static\js\jqBootstrapValidation.js" />
+    <Content Include="Main\Static\js\jquery-1.11.0.js" />
     <Content Include="Global.asax" />
     <Content Include="gulpfile.js" />
     <Content Include="Main\Static\Movies\cinemagraph-socialbrain-home.mp4" />
@@ -1209,7 +1209,10 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Main\Static\css\" />
+    <Folder Include="Main\Static\scss\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

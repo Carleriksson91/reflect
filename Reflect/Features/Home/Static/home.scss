@@ -1,10 +1,14 @@
 ﻿.test {
     font-size: 46px;
     background-color: red;
-}
-
-body {
-    color: #fff !important;
+} 
+ 
+video { 
+    opacity: 0.3 !important;
+} 
+    
+body {   
+    color: #fff !important; 
     text-align: center;
     text-shadow: 0 1px 3px rgba(0,0,0,.5) !important;
     height: 100%;
@@ -15,21 +19,20 @@ body {
     color: #333;
     background-color: #fff;
 }
-
-.arrow {
-    width: 0; 
-    height: 0;
+   
+.arrow {   
+    width: 0;
+    height: 0; 
     border-style: solid;
     background: transparent;
-}
+} 
 
 .arrow-right {
-     border-width: 60px 0 60px 70px;
+    border-width: 60px 0 60px 70px;
     border-color: transparent transparent transparent #f6bf01;
 }
 
 .arrow-left {
-
     border-width: 60px 70px 60px 0;
     border-color: transparent #f6bf01 transparent transparent;
 }

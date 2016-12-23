@@ -2,6 +2,9 @@
   font-size: 46px;
   background-color: red; }
 
+video {
+  opacity: 0.3 !important; }
+
 body {
   color: #fff !important;
   text-align: center;

@@ -19,6 +19,10 @@ namespace Reflect.Features.Home
             this.unitOfWork = unitOfWork;
         }
 
+        public HomeController() {
+            
+        }
+
         public ActionResult Index()
         {
             //var model = new HomeViewModel(GetQuestions());

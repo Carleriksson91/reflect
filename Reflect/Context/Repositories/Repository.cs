@@ -26,14 +26,6 @@ namespace Reflect.Context.Repositories
         {
             _context.Set<TEntity>().AddRange(entities);
         }
-
-        //    public int SaveChanges(DbContext context, EntityEntry<TEntity> entity)
-        //    {
-        //        var entities = context.ChangeTracker
-        //.Entries()
-        //.Where(x => x.State == EntityState.Modified || x.State == EntityState.Added && x.Entity != null).Select(x => x.Entity).ToList();
-        //        return 0;
-        //    }
         public IEnumerable<TEntity> Find(Expression<Func<TEntity, bool>> predicate)
         {
             return _context.Set<TEntity>().Where(predicate);
