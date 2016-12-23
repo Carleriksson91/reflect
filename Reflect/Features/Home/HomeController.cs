@@ -11,8 +11,9 @@ namespace Reflect.Features.Home
     public class HomeController : Controller
     {
         public ActionResult Index() {
-         var model = new HomeViewModel(GetQuestions());
-            return View(model);
+         //var model = new HomeViewModel(GetQuestions());
+            //return View(model);
+            return View();
         }
       [HttpPost]
       public ActionResult Ask(string title, string content) {

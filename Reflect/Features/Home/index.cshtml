@@ -23,12 +23,15 @@
        </div>
        <div class="col-md-4">
            <h2>Frågor</h2>
-           <ul>
-               @foreach (var question in Model.Questions)
-               {
-                   <li>@question.Content</li>
-               }
-           </ul>
+           @if (Model != null)
+           {
+            <ul>
+                @foreach (var question in Model.Questions)
+                {
+                    <li>@question.Content</li>
+                }
+            </ul>
+           }
        </div>
        <div class="col-md-4">
           <span class="fa-stack fa-4x">
