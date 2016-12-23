@@ -1196,7 +1196,10 @@
     <Compile Include="Context\Entites\Tag.cs" />
     <Compile Include="Context\Interfaces\IQuestionRepository.cs" />
     <Compile Include="Context\Interfaces\IRepository.cs" />
+    <Compile Include="Context\Repositories\QuestionRepository.cs" />
     <Compile Include="Context\Repositories\Repository.cs" />
+    <Compile Include="Context\UnitOfWork\IUnitOfWork.cs" />
+    <Compile Include="Context\UnitOfWork\UnitOfWork.cs" />
     <Compile Include="Features\Home\HomeController.cs" />
     <Compile Include="Features\Home\HomeViewModel.cs" />
     <Compile Include="Global.asax.cs">

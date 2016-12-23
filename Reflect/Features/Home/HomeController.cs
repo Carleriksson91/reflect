@@ -6,16 +6,17 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Reflect.Context.Interfaces;
+using Reflect.Context.UnitOfWork;
 
 namespace Reflect.Features.Home
 {
     public class HomeController : Controller
     {
-        private readonly IQuestionRepository questionRepository;
+        private readonly IUnitOfWork unitOfWork;
 
-        public HomeController(IQuestionRepository quesionRepository)
+        public HomeController(IUnitOfWork unitOfWork)
         {
-            this.questionRepository = quesionRepository;
+            this.unitOfWork = unitOfWork;
         }
 
         public ActionResult Index()
@@ -27,7 +28,7 @@ namespace Reflect.Features.Home
         [HttpPost]
         public ActionResult Ask(string title, string content)
         {
-            questionRepository.Add(new Question()
+            unitOfWork.Questions.Add(new Question()
             {
                 Title = title,
                 Content = content,

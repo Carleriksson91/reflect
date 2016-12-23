@@ -8,7 +8,6 @@ using Reflect.Context.Entites;
 namespace Reflect.Context.Interfaces
 {
     public interface IQuestionRepository : IRepository<Question> {
-
-
+        
     }
 }
