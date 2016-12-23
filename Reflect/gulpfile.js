@@ -19,7 +19,7 @@ gulp.task("index", function () {
       //      .pipe(inject(gulp.src(paths.js, { read: false })))
       //      .pipe(gulp.dest('./Features'));
     return gulp.src("./Features/Layouts/beer.cshtml")
-          .pipe(inject(gulp.src(paths.js, { read: false }), { relative: true }, { name: 'js' }))
+          .pipe(inject(gulp.src(paths.js, { read: false }), { relative: true }))
           .pipe(gulp.dest("./Features"))
           .pipe(inject(gulp.src(paths.css, { read: false }), { relative: true }), { name: 'css' })
           .pipe(gulp.dest("./Features"));
