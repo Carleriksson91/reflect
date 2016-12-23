@@ -1002,7 +1002,7 @@
     <Content Include="bower_components\what-input\what-input.js" />
     <Content Include="bower_components\what-input\what-input.min.js" />
     <Content Include="Features\Home\Static\foundation.css" />
-    <Content Include="Features\Layouts\agency.css" />
+    <Content Include="Main\Static\css\agency.css" />
     <Content Include="Main\Static\js\agency.js" />
     <Content Include="Features\Layouts\bootstrap.css" />
     <Content Include="Main\Static\js\bootstrap.js" />
@@ -1164,7 +1164,7 @@
     <Content Include="Features\Home\Static\home.scss" />
     <Content Include="package.json" />
     <Content Include="Features\Layouts\_root.cshtml" />
-    <Content Include="Features\Layouts\beer.cshtml" />
+    <Content Include="Main\Static\css\beer.cshtml" />
     <Content Include="Features\fancyhovertest.cshtml" />
     <Content Include="Features\radiobuttons.cshtml" />
     <Content Include="404.html" />
@@ -1210,7 +1210,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Main\Static\css\" />
     <Folder Include="Main\Static\scss\" />
   </ItemGroup>
   <PropertyGroup>
