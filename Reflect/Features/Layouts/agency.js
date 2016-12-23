@@ -15,9 +15,8 @@ $(function () {
         event.preventDefault();
     });
 
-    $("section").on("scroll", function (e) {
+    $(document).on("scroll", function (e) {
         e.preventDefault();
-        console.log("hdioada");
         var currentscroll = $(window).scrollTop();
         var $visibleSections = $("section:visible");
         $visibleSections.each(function (i) {
