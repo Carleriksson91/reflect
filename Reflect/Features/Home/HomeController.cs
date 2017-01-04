@@ -20,7 +20,6 @@ namespace Reflect.Features.Home
         }
 
         public HomeController() {
-            
         }
 
         public ActionResult Index()
