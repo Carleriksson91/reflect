@@ -70,6 +70,10 @@
       <HintPath>..\packages\Newtonsoft.Json.5.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="StructureMap, Version=4.4.2.472, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\StructureMap.4.4.2\lib\net45\StructureMap.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -1225,6 +1229,7 @@
     <Compile Include="Context\Repositories\Repository.cs" />
     <Compile Include="Context\UnitOfWork\IUnitOfWork.cs" />
     <Compile Include="Context\UnitOfWork\UnitOfWork.cs" />
+    <Compile Include="DI\DependencyInjector.cs" />
     <Compile Include="Features\Home\HomeController.cs" />
     <Compile Include="Features\Home\HomeViewModel.cs" />
     <Compile Include="Global.asax.cs">
