@@ -1009,6 +1009,7 @@
     <Content Include="Main\Static\css\REEN\main.css" />
     <Content Include="Main\Static\css\REEN\owl.carousel.css" />
     <Content Include="Main\Static\css\REEN\owl.transitions.css" />
+    <Content Include="Main\Static\css\REEN\slider01.jpg" />
     <Content Include="Main\Static\js\agency.js" />
     <Content Include="Main\Static\css\bootstrap.css" />
     <Content Include="Main\Static\js\bootstrap.js" />
